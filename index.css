@@ -100,7 +100,7 @@ cursor: pointer;
     right: 2rem;
 }
 .home h1 {
-    font-size: 30px;
+    font-size: 40px;
     color: #e07a00;
     font-family: 'Roboto', sans-serif;
 }
@@ -112,6 +112,34 @@ cursor: pointer;
 .home p {
    font-size: 24px; 
    color: #f0f0f0;
-   font-family:'Roboto', sans-serif; ;
+   font-family:'Roboto', sans-serif; 
 }
+
+.btn-outline {
+    outline: none;
+    display: inline;
+    border: solid 1px #f79d30;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:'Roboto', sans-serif; ;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    color: #8a4e04;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+.btn-outline:hover,
+.btn-outline:focus {
+background-color: #e07a00;
+color: #f0f0f0;
+
+}
+.btn-outline:active{
+    background-color: #f0f0f0;
+    background-color: #e07a00;
+}
+
 /*End of header section*/
