@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: #e07a00;
 }
+/*Start of header styling*/
 header {
     width: 100%;
     height: 300vh;
@@ -26,6 +27,7 @@ header {
     width: 90%;
     margin: 0 auto;
 }
+/*navbar styling*/
 nav {
     padding-top: 5rem;
     display: flex;
@@ -37,6 +39,12 @@ nav {
 .brand {
     font-size: 3rem;
     font-weight: 700;
+
+}
+a:hover {
+    text-decoration: none;
+    color: #f5c385;
+
 }
 .brand span {
     color:#f0f0f0;
@@ -47,6 +55,7 @@ nav ul {
 }
 nav ul li {
     list-style: none;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -83,3 +92,26 @@ nav ul li a:hover::after {
 transform: scaleX(1);
 cursor: pointer;
 }
+/*home section styling*/
+.home{
+    position: absolute;
+    text-align: center;
+    margin-top: 40rem;
+    right: 2rem;
+}
+.home h1 {
+    font-size: 30px;
+    color: #e07a00;
+    font-family: 'Roboto', sans-serif;
+}
+.home h2 {
+    font-size: 24px;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+.home p {
+   font-size: 24px; 
+   color: #f0f0f0;
+   font-family:'Roboto', sans-serif; ;
+}
+/*End of header section*/
