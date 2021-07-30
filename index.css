@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    
 }
 html {
     font-size: 10px;
@@ -12,5 +14,72 @@ a {
     color: #e07a00;
 }
 header {
+    width: 100%;
+    height: 300vh;
+    background: linear-gradient(to bottom , rgba(0,0,0,.8), rgba(0,0,0,.5)),url(./assets/5bcb9bf96d1b6777b6fa13066282fb0e.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+nav {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.brand {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.brand span {
+    color:#f0f0f0;
+
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
     
+}
+nav ul li a :last-child{
+    margin: 0;
+}
+nav ul li a::before,
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f0f0f0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+nav ul li a::before {
+    top: 0;
+    transform-origin: left;
+}
+nav ul li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+transform: scaleX(1);
+cursor: pointer;
 }
