@@ -78,3 +78,50 @@ input {
 .placeholder{
     color: #fff;
 }
+/* Footer styling*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5%;
+}
+
+footer {
+    background-color: #1a1a1a;
+    height: auto;
+    opacity: 0.9;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    
+}
+footer h2{
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+#foot {
+    background-color: #181818;
+    margin: auto;
+}
+footer h5{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    position: relative;
+}
+.footer-col {
+width: 25%;
+padding: 0 15px;
+}
+.footer-col3{
+    margin-bottom: 2rem;
+}
+.footer-col4{
+    margin-bottom: 8rem;
+}
