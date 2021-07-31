@@ -198,7 +198,7 @@
         <div class="container-fluid" id="selection">
             <h2>Place Your Order</h2><br>
             <div class="selection">
-                <select name="" id="">
+                <select name="" id="pnames">
                     <option value="" selected class="selected">Choose Your Flavour...</option>
                     <option value="">Cheese Pizza</option>
                     <option value="">Veggie Pizza</option>
@@ -239,8 +239,11 @@
                     <option value="">Pepperoni</option>
                 </select><br><br><br><br>
 
-                <input name="" type="number" id="number" placeholder="Number ..." min="1">
+                <input name="" type="number" id="number" placeholder="Number of pizzas" min="1">
             </div><br><br>
+            <button class="btn-outline" id="btnn" onclick="">Order</button><br><br>
+            <div id="cart"></div><br>
+            
         </div>
         <!---End of Order Section-->
         <!----Start of Footer Section-->
@@ -294,7 +297,7 @@
 
 
     <!---Javascript link section-->
-    <script src="main.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -304,6 +307,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
     <!---End of Js link section-->
 

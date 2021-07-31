@@ -40,6 +40,9 @@
 }*/
 
 /*Order Styling */
+#btnn {
+    margin-left: 7%;
+}
 
 select {
     width: 315px;
@@ -123,6 +126,8 @@ footer {
     font-family: 'Roboto', sans-serif;
     
 }
+ 
+
 footer h2{
     font-size: 4rem;
     font-weight: 700;

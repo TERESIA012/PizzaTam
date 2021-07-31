@@ -1,19 +1,26 @@
-$(document).ready(function(){
+//Arrays 
+//1.pnames=["Cheese Pizza","Veggie Pizza","Pepperoni Pizza","Meat Pizza","Margherita Pizza","BBQ Chicken Pizza","Hawiian Pizza","Buffalo Pizza","Supreme Pizza","Works Pizza"]
+//2.size=["Large","Medium","Small","One Piecer","Regular","Pizza Kadogo"]
+//3.crust=["Crispy","Stuffed","Gluten-Free"]
+//4.toppings=["Mushroom","Sausage","Bacon","Extra Cheese","Pineapple","Pepperoni"]
 
-    $(".animation").mouseover(function(){
-       $(this).animate({
-                          height:'200px',
-                          width:'200px',
-                          left : '-11px'
-                        })
-                                });
-    
-    $(".animation").mouseout(function(){
-       $(this).animate({
-                          height:'178px',
-                          width:'178px',
-                          left : '0px'
-                        })
-                                });
-    
-    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
