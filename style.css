@@ -1,5 +1,32 @@
 /*menu section styling*/
-#menu {
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu {
+    background-color: #181818;
+    font-size: 12px;
+}
+.card {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+.menu h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*#menu {
     background-color: #1a1a1a;
     color: #fff;
     font-size: 16px;
@@ -10,7 +37,7 @@
     font-weight: 700;
     text-decoration: underline;
     text-align: center;
-}
+}*/
 
 /*Order Styling */
 
