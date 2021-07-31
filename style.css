@@ -4,9 +4,77 @@
     color: #fff;
     font-size: 16px;
 }
-#menu  h2{
+
+#menu h2 {
     font-size: 4rem;
     font-weight: 700;
-    text-decoration: underline; 
+    text-decoration: underline;
     text-align: center;
+}
+
+/*Order Styling */
+
+select {
+    width: 315px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    cursor: pointer;
+    border: 6px solid #1a1a1a;
+    border-radius: 5px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:hover {
+    border: 6px solid #181818;
+}
+
+select option {
+    background-color: #1a1a1a;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.selected {
+    display: none;
+}
+
+#selection h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
+#selection {
+    background-color: #e07a00;
+}
+
+.selection {
+    margin-left: 5%;
+}
+input {
+    width: 315px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    cursor: pointer;
+    border: 6px solid #1a1a1a;
+    border-radius: 5px;
+}
+.placeholder{
+    color: #fff;
 }
