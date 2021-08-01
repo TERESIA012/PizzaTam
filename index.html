@@ -202,11 +202,11 @@
                 <div class="customer">
                     <div id="cart">
                         <h3>Your Order is;</h3><br>
-                        <li>Pizza;</li><br>
-                        <li>Size;</li><br>
-                        <li>Topping;</li><br>
-                        <li>Crust;</li><br>
-                        <li>Amount;</li><br>
+                        <li class="p"></li><br>
+                        <li class="s"></li><br>
+                        <li class="t"></li><br>
+                        <li class="c"></li><br>
+                        <li class="n"></li><br>
                         <li>Total;</li><br>
                     </div>
                     <div class="delivery">
@@ -222,52 +222,52 @@
                     </div>
                 </div><br>
                 <div class="cus">
-                    <select name="" id="pnames" class="validate">
+                    <select name="" id="pname" class="validate" required onchange="flavourChange()">
                         <option value="selected" selected class="selected">Choose Your Flavour...</option>
-                        <option value="">Cheese Pizza</option>
-                        <option value="">Veggie Pizza</option>
-                        <option value="">Pepperoni Pizza</option>
-                        <option value="">Meat Pizza</option>
-                        <option value="">Margherita Pizza</option>
-                        <option value="">BBQ Chicken Pizza</option>
-                        <option value="">Hawaiian Pizza</option>
-                        <option value="">Buffalo Pizza</option>
-                        <option value="">Supreme Pizza</option>
-                        <option value="">Works Pizza</option>
+                        <option value="Cheese">Cheese Pizza</option>
+                        <option value="Veggie">Veggie Pizza</option>
+                        <option value="Pepperoni">Pepperoni Pizza</option>
+                        <option value="Meat">Meat Pizza</option>
+                        <option value="Margherita">Margherita Pizza</option>
+                        <option value="BBQ Chicken">BBQ Chicken Pizza</option>
+                        <option value="Hawaiian">Hawaiian Pizza</option>
+                        <option value="Buffalo">Buffalo Pizza</option>
+                        <option value="Supreme">Supreme Pizza</option>
+                        <option value="Works">Works Pizza</option>
                     </select><br><br><br><br><br><br>
 
-                    <select name="" id="size" class="validate">
+                    <select name="" id="size" class="validate" required onchange="sizeChange()">
                         <option value="selected" selected class="selected">Choose Your Size...</option>
-                        <option value="">Large(Ksh 1200)</option>
-                        <option value="">Medium(Ksh 900)</option>
-                        <option value="">Small(Ksh 750)</option>
-                        <option value="">One Piecer(Ksh 250)</option>
-                        <option value="">Regular(Ksh 650)</option>
-                        <option value="">Pizza Kadogo(Ksh 500)</option>
+                        <option value="Large">Large(Ksh 1200)</option>
+                        <option value="Medium">Medium(Ksh 900)</option>
+                        <option value="Small">Small(Ksh 750)</option>
+                        <option value="One Piecer">One Piecer(Ksh 250)</option>
+                        <option value="Regular">Regular(Ksh 650)</option>
+                        <option value="Pizza Kadogo">Pizza Kadogo(Ksh 500)</option>
                     </select><br><br><br><br><br>
 
-                    <select name="" id="crust" class="validate">
+                    <select name="" id="crust" class="validate" required onchange="crustChange()">
                         <option value="selected" selected class="selected">Choose Your Crust...</option>
-                        <option value="">Crispy(Ksh350)</option>
-                        <option value="">Stuffed(Ksh250)</option>
-                        <option value="">Gluten-free(Ksh150)</option>
+                        <option value="Crispy">Crispy(Ksh350)</option>
+                        <option value="Stuffed">Stuffed(Ksh250)</option>
+                        <option value="Gluten-free">Gluten-free(Ksh150)</option>
                     </select><br><br><br><br><br>
 
-                    <select name="" id="toppings" class="validate">
+                    <select name="" id="toppings" class="validate" required onchange="toppingsChange()">
                         <option value="selected" selected class="selected">Choose Your Toppings...</option>
-                        <option value="">Mushroom(Ksh 200)</option>
-                        <option value="">Sausage(Ksh 180)</option>
-                        <option value="">Bacon(Ksh 280)</option>
-                        <option value="">Extra Cheese(Ksh 200)</option>
-                        <option value="">Pineapple(Ksh 150)</option>
-                        <option value="">Pepperoni(Ksh 250)</option>
+                        <option value="Mushroom">Mushroom(Ksh 200)</option>
+                        <option value="Sausage">Sausage(Ksh 180)</option>
+                        <option value="Bacon">Bacon(Ksh 280)</option>
+                        <option value="Extra Cheese">Extra Cheese(Ksh 200)</option>
+                        <option value="Pineapple">Pineapple(Ksh 150)</option>
+                        <option value="Pepperoni">Pepperoni(Ksh 250)</option>
                     </select><br><br><br><br>
 
-                    <input name="" value="selected" type="number" id="number" placeholder="Number of pizzas" min="1"
-                        class="validate">
+                    <input name="" required value="number" type="number" id="number" placeholder="Number of pizzas" min="1"
+                        class="n">
                 </div>
             </div><br><br>
-            <button class="btn-outline" id="btnn" onclick=" return Bill()">Order</button><br><br>
+            <button class="btn-outline" id="btnn" onclick="">Order</button><br><br>
 
 
         </div>
