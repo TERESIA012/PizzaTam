@@ -6,16 +6,29 @@
 
 //constructor function
 
-function Bill(pname,size,crust,toppings,){
+function Order(pname,size,crust,toppings,){
 this.pname=pname
 this.size=size
 this.crust=crust
 this.toppings=toppings
 
-Bill.prototype.fullBill=function(){
+Order.prototype.fullOrder=function(){
     return this.pname + "of size "  + this.size +"with a crust of" + this.crust  + "and topping of" + this.toppings;
+
 };
 
+};
+
+function Bill(number,sizePrice,crustPrice,toppingsPrice,deliveryFee){
+    this.number=number
+    this.sizePrice=sizePrice
+    this.crustPrice=crustPrice
+    this.toppingsPrice=toppingsPrice
+    this.delivery=deliveryFee
+
+Total.prototype.allBill=function(){
+    return number *(sizePrice + crustPrice + toppingsPrice)+deliveryFee
+};
 };
 
 
