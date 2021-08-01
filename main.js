@@ -4,32 +4,55 @@
 //3.crust=["Crispy","Stuffed","Gluten-Free"]
 //4.toppings=["Mushroom","Sausage","Bacon","Extra Cheese","Pineapple","Pepperoni"]
 
+//order display
+$(document).ready(function(){  
+    $("#btnn").click(function(){  
+        $(".customer").toggle();  
+    });  
+});  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //constructor functions
 
-function Order(pname,size,crust,toppings,){
-this.pname=pname
-this.size=size
-this.crust=crust
-this.toppings=toppings
+// function Order(pname,size,crust,toppings,){
+// this.pname=pname
+// this.size=size
+// this.crust=crust
+// this.toppings=toppings
 
-Order.prototype.fullOrder=function(){
-    return this.pname + "of size "  + this.size +"with a crust of" + this.crust  + "and topping of" + this.toppings;
+// Order.prototype.fullOrder=function(){
+//     return this.pname + "of size "  + this.size +"with a crust of" + this.crust  + "and topping of" + this.toppings;
 
-};
+// };
 
-};
+// };
 
-function Bill(number,sizePrice,crustPrice,toppingsPrice,deliveryFee){
-    this.number=number
-    this.sizePrice=sizePrice
-    this.crustPrice=crustPrice
-    this.toppingsPrice=toppingsPrice
-    this.delivery=deliveryFee
+// function Bill(number,sizePrice,crustPrice,toppingsPrice,deliveryFee){
+//     this.number=number
+//     this.sizePrice=sizePrice
+//     this.crustPrice=crustPrice
+//     this.toppingsPrice=toppingsPrice
+//     this.delivery=deliveryFee
 
-Total.prototype.allBill=function(){
-    return number *(sizePrice + crustPrice + toppingsPrice)+deliveryFee
-};
-};
+// Total.prototype.allBill=function(){
+//     return number *(sizePrice + crustPrice + toppingsPrice)+deliveryFee
+// };
+// };
 
 
 
