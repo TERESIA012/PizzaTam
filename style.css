@@ -157,3 +157,17 @@ padding: 0 15px;
 .footer-col4{
     margin-bottom: 8rem;
 }
+
+.customer {
+    display: none;
+    float: right;
+  margin-right:20rem;
+  font-size: 18px;
+  font-weight: 800;
+  list-style: 200%;
+  text-align: center;
+}
+form {
+    margin-right: 2rem;
+    
+}

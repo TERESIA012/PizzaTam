@@ -4,7 +4,7 @@
 //3.crust=["Crispy","Stuffed","Gluten-Free"]
 //4.toppings=["Mushroom","Sausage","Bacon","Extra Cheese","Pineapple","Pepperoni"]
 
-//constructor function
+//constructor functions
 
 function Order(pname,size,crust,toppings,){
 this.pname=pname
