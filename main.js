@@ -8,8 +8,17 @@
 $(document).ready(function(){  
     $("#btnn").click(function(){  
         $(".customer").toggle();  
-    });  
+    }); 
+    //delivery details
+    $("#yes").click(function(){
+        prompt("Enter location for delivery");
+        alert ("The delivery fee is 200.Your order has been received and is being processed.")
+      }); 
 });  
+
+
+ 
+
 
 
 
