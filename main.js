@@ -10,73 +10,34 @@ $(document).ready(function () {
         $(".customer").toggle();
 
         //append
-         let name = $("#pname option:selected").val();
-         console.log(name);
+        let name = $("#pname option:selected").val();
+        console.log(name);
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
         let toppings = $("#toppings option:selected").val();
         let number = $("#number").val();
-    
-        
-        // $(".p").append("Pizza :" + name + "<br>");
-        // $(".s").append("Pizza Size:" + size + "<br>");
-        // $(".t").append("Topping:" + crust + "<br>");
-        // $(".c").append("Crust:" + toppings + "<br>");
-        // $(".n").append("Number Of pizza:" + number + "<br>");
+
+
+
         //delivery details
         $("#yes").click(function () {
             prompt("Enter location for delivery");
-            alert("The delivery fee is 200.Your order has been received and is being processed.")
+            alert("The delivery fee is 200.Your order has been received and is being processed.Your total amount is;" + (totalBill + 200));
         });
-        // flavourChange = function () {
-        //     console.log("Flavour changing")
-        //     let name = $("#pname option:selected").val();
-        //     console.log(name);
-        //     $(".p").html("Pizza :" + name + "<br>");
-
-        // }
-        // sizeChange = function () {
-        //     console.log("Size changing")
-        //     let size = $("#size option:selected").val();
-        //     console.log(size);
-        //     $(".s").html("Pizza Size:" + size + "<br>");
-
-
-        // }
-        // crustChange = function () {
-        //     console.log("Crust changing")
-        //     let crust = $("#crust option:selected").val();
-        //     console.log(crust);
-        //     $(".c").html("Crust:" + crust + "<br>");
-
-
-        // }
-        // toppingsChange = function () {
-        //     console.log("Toppings changing")
-        //     let toppings = $("#toppings option:selected").val();
-        //     console.log(size);
-        //     $(".t").html("Topping:" + toppings + "<br>");
-
-
-        // }
-        // numberChange = function () {
-        //     console.log("Number changing")
-        //     let number = $("#number").val();
-        //     console.log(number);
-        //     $(".n").html("Number Of pizza:" + number + "<br>");
-        // }
-
+        $("#no").click(function () {
+            alert("Your order has been received and is being processed.Your total amount is;" + totalBill);
+        });
 
 
         //constructor function order
         let order = (name, size, crust, topping, number, totalBill) => {
-            return { name, size, crust, topping, number, totalBill};
+            return { name, size, crust, topping, number, totalBill };
         };
         //price
         let price;
-        let totalBill=0
-        
-        
+        let totalBill = 0
+
+
         switch (name) {
             case name = "Cheese Pizza":
                 switch (size) {
@@ -728,7 +689,7 @@ $(document).ready(function () {
                             totalBill = (price * number) + 150;
                         }
                         break;
-                        
+
                     case size = "Medium":
                         price = 900
                         if (crust === "Crispy") {
@@ -781,8 +742,8 @@ $(document).ready(function () {
                         break;
                 }
                 break;
-            }   
-        
+        }
+
         switch (toppings) {
             case topping = "Mushroom":
                 totalBill = totalBill + 280;
@@ -800,77 +761,32 @@ $(document).ready(function () {
                 totalBill = totalBill + 150;
                 break;
             case topping = "Pepperoni":
-                totalBill = totalBill+ 250;
+                totalBill = totalBill + 250;
                 break;
-        
+
 
         }
-        // $(".p").append("Pizza :" + name + "<br>");
-        // $(".s").append("Pizza Size:" + size + "<br>");
-        // $(".t").append("Topping:" + crust + "<br>");
-        // $(".c").append("Crust:" + toppings + "<br>");
-        // $(".n").append("Number Of pizza:" + number + "<br>");
-        // //delivery details
-        // $("#yes").click(function () {
-        //     prompt("Enter location for delivery");
-        //     alert("The delivery fee is 200.Your order has been received and is being processed.")
-        // });
-        
+
+
         let newOrder = order(name, size, crust, topping, number, totalBill);
         $('#cart').text(" ");
         $("#cart").append("<br>" + "Pizza :   " + newOrder.name + "<br>" + "Size :   "
             + newOrder.size + "<br>" + "Crust :     "
-            + newOrder.crust+ "<br>" + "Toppings :     "
+            + newOrder.crust + "<br>" + "Toppings :     "
             + newOrder.topping + "<br>" + " Number of pizzas :    "
             + newOrder.number + "<br>" + "Total Bill :  "
             + newOrder.totalBill + "<br>");
 
 
-        // flavourChange = function () {
-        //     console.log("Flavour changing")
-        //     this.name = $("#pname option:selected").val();
-        //     console.log(name);
-        //     $(".p").html("Pizza :" + name + "<br>");
-
-        // }
-        // sizeChange = function () {
-        //     console.log("Size changing")
-        //     this.size = $("#size option:selected").val();
-        //     console.log(size);
-        //     $(".s").html("Pizza Size:" + size + "<br>");
 
 
-        // }
-        // crustChange = function () {
-        //     console.log("Crust changing")
-        //     this.crust = $("#crust option:selected").val();
-        //     console.log(crust);
-        //     $(".c").html("Crust:" + crust + "<br>");
-
-
-        // }
-        // toppingsChange = function () {
-        //     console.log("Toppings changing")
-        //     this.toppings = $("#toppings option:selected").val();
-        //     console.log(size);
-        //     $(".t").html("Topping:" + toppings + "<br>");
-
-
-        // }
-        // numberChange = function () {
-        //     console.log("Number changing")
-        //     this.number = $("#number").val();
-        //     console.log(number);
-        //     $(".n").html("Number Of pizza:" + number + "<br>");
-
-        //}
-        
 
     });
 
+
     this.totalBill = parseInt(totalBill)
-        // $(".total").html("totalBill :" + totalBill);
-        console.log(totalBill);
+    // $(".total").html("totalBill :" + totalBill);
+    console.log(totalBill);
 
 });
 
@@ -878,32 +794,7 @@ $(document).ready(function () {
 
 
 
-//constructor functions
 
-// function Order(pname,size,crust,toppings,){
-// this.pname=pname
-// this.size=size
-// this.crust=crust
-// this.toppings=toppings
-
-// Order.prototype.fullOrder=function(){
-//     return this.pname + "of size "  + this.size +"with a crust of" + this.crust  + "and topping of" + this.toppings;
-
-// };
-
-// };
-
-// function Bill(number,sizePrice,crustPrice,toppingsPrice,deliveryFee){
-//     this.number=number
-//     this.sizePrice=sizePrice
-//     this.crustPrice=crustPrice
-//     this.toppingsPrice=toppingsPrice
-//     this.delivery=deliveryFee
-
-// Total.prototype.allBill=function(){
-//     return number *(sizePrice + crustPrice + toppingsPrice)+deliveryFee
-// };
-// };
 
 
 
