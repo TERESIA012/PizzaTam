@@ -200,14 +200,17 @@
             <div class="selection">
 
                 <div class="customer">
-                    <div id="cart">
-                        <h3>Your Order is;</h3><br>
-                        <li class="p"></li><br>
+                    <h3>Your Order is;</h3><br>
+                    <div id="cart1">
+                        <ol id="cart"></ol>
+                        
+
+                        <!-- <li class="p"></li><br>
                         <li class="s"></li><br>
                         <li class="t"></li><br>
                         <li class="c"></li><br>
                         <li class="n"></li><br>
-                        <li>Total;</li><br>
+                        <li class="total">Total:</li><br> -->
                     </div>
                     <div class="delivery">
                         <h3>Would You like it to be delivered?</h3>
@@ -222,7 +225,7 @@
                     </div>
                 </div><br>
                 <div class="cus">
-                    <select name="" id="pname" class="validate" required onchange="flavourChange()">
+                    <select name="" id="pname" class="validate" required ">
                         <option value="selected" selected class="selected">Choose Your Flavour...</option>
                         <option value="Cheese">Cheese Pizza</option>
                         <option value="Veggie">Veggie Pizza</option>
@@ -233,10 +236,10 @@
                         <option value="Hawaiian">Hawaiian Pizza</option>
                         <option value="Buffalo">Buffalo Pizza</option>
                         <option value="Supreme">Supreme Pizza</option>
-                        <option value="Works">Works Pizza</option>
+                        <!-- <option value="Works">Works Pizza</option> -->
                     </select><br><br><br><br><br><br>
 
-                    <select name="" id="size" class="validate" required onchange="sizeChange()">
+                    <select name="" id="size" class="validate" required >
                         <option value="selected" selected class="selected">Choose Your Size...</option>
                         <option value="Large">Large(Ksh 1200)</option>
                         <option value="Medium">Medium(Ksh 900)</option>
@@ -246,14 +249,14 @@
                         <option value="Pizza Kadogo">Pizza Kadogo(Ksh 500)</option>
                     </select><br><br><br><br><br>
 
-                    <select name="" id="crust" class="validate" required onchange="crustChange()">
+                    <select name="" id="crust" class="validate" required >
                         <option value="selected" selected class="selected">Choose Your Crust...</option>
                         <option value="Crispy">Crispy(Ksh350)</option>
                         <option value="Stuffed">Stuffed(Ksh250)</option>
                         <option value="Gluten-free">Gluten-free(Ksh150)</option>
                     </select><br><br><br><br><br>
 
-                    <select name="" id="toppings" class="validate" required onchange="toppingsChange()">
+                    <select name="" id="toppings" class="validate" required >
                         <option value="selected" selected class="selected">Choose Your Toppings...</option>
                         <option value="Mushroom">Mushroom(Ksh 200)</option>
                         <option value="Sausage">Sausage(Ksh 180)</option>
@@ -264,7 +267,7 @@
                     </select><br><br><br><br>
 
                     <input name="" required value="number" type="number" id="number" placeholder="Number of pizzas" min="1"
-                        class="n">
+                        class="n" >
                 </div>
             </div><br><br>
             <button class="btn-outline" id="btnn" onclick="">Order</button><br><br>
